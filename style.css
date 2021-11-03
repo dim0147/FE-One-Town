@@ -1,0 +1,356 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding-bottom: 50px;
+}
+
+html,
+body,
+button,
+a {
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.icon {
+  color: #ffffff;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-weight: 100;
+}
+.icon > span {
+  font-weight: 700;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 15px 60px;
+  font-size: 12px;
+  border: 1px solid #ffffff;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: center;
+  cursor: pointer;
+}
+.btn--navigate {
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.btn--navigate > ion-icon {
+  font-size: 20px;
+  font-weight: 700;
+}
+.btn--black {
+  color: #626262;
+  border: 1px solid #626262;
+}
+
+.divider {
+  border: 1px solid #626262;
+  width: 50px;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.menu {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+}
+.menu__item {
+  margin-right: 30px;
+}
+.menu__link {
+  font-size: 15px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.banner {
+  background-image: url("https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 500px;
+  padding-bottom: 330px;
+}
+.banner__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.banner__left {
+  max-width: 500px;
+  font-size: 78px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 0.7;
+}
+.banner__left > span {
+  font-size: 40px;
+  font-weight: 400px;
+}
+.banner__right {
+  max-width: 545px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.banner__detail {
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 45px;
+}
+.banner__divider {
+  width: 55px;
+  background-color: white;
+  height: 1px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.introduce {
+  display: flex;
+}
+.introduce__img, .introduce__content {
+  width: 50%;
+}
+.introduce__content {
+  padding: 158px 116px 123px 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.introduce__header {
+  font-size: 40px;
+  color: #3c2839;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 56px;
+}
+.introduce__description {
+  font-size: 16px;
+  color: #626262;
+  text-align: center;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+.introduce__divider {
+  margin-bottom: 55px;
+}
+.introduce__btn {
+  margin: 0 auto;
+}
+
+.feature-work {
+  display: flex;
+  padding-bottom: 90px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+.feature-work__header {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 110px;
+  margin-bottom: 50px;
+}
+.feature-work__divider {
+  margin-bottom: 60px;
+}
+.feature-work__list {
+  list-style: none;
+  display: flex;
+  margin-bottom: 30px;
+}
+.feature-work__item-dot {
+  border: 1px solid #878787;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+.feature-work__item-dot--active {
+  border: 1px solid #878787;
+  background-color: #aeaeae;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 30px;
+}
+.feature-work__img {
+  margin-bottom: 50px;
+}
+
+.services {
+  padding-top: 85px;
+}
+.services--header {
+  font-size: 40px;
+  color: #3c2839;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 45px;
+}
+.services > .divider {
+  margin-bottom: 80px;
+}
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.services__item {
+  width: 33.3333333333%;
+  display: flex;
+}
+.services__item--reverse {
+  flex-direction: row-reverse;
+}
+.services__item--green {
+  color: #64b341;
+}
+.services__item--green-shape {
+  color: #00c59e;
+}
+.services__item--purple {
+  color: purple;
+}
+.services__item--red {
+  color: red;
+}
+.services__item--orange {
+  color: orange;
+}
+.services__item--blue {
+  color: #2f84e5;
+}
+.services__item__img, .services__item__description {
+  width: 50%;
+}
+.services__item__img {
+  object-fit: cover;
+  height: 440px;
+}
+.services__item__description {
+  position: relative;
+  background-color: currentColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.services__item__description > h3 {
+  color: white;
+  margin-bottom: 45px;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.5;
+  max-width: 170px;
+  text-align: center;
+}
+.services__item__description > .divider {
+  border-color: white;
+}
+.services__item__description--arrow-left::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -50px;
+  transform: translateY(-50%);
+  border-top: 25px solid transparent;
+  border-right: 50px solid currentColor;
+  border-bottom: 25px solid transparent;
+}
+.services__item__description--arrow-right::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -50px;
+  transform: translateY(-50%);
+  border-top: 25px solid transparent;
+  border-left: 50px solid currentColor;
+  border-bottom: 25px solid transparent;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://media.istockphoto.com/photos/young-woman-in-blue-warm-sweater-sitting-near-the-big-window-of-shop-picture-id1280254514?b=1&k=20&m=1280254514&s=170667a&w=0&h=fxbbAOZYDAWLuZZtxZ2RGHJFYJG3pquYSGm4rnjIZDc=");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.about-us__heading {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+.about-us__description {
+  max-width: 1070px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.about-us > .divider {
+  border-color: white;
+}
+.about-us__list {
+  padding-top: 50px;
+  display: flex;
+}
+.about-us__item {
+  border: 1px solid #ffffff;
+  margin-right: 50px;
+}
+.about-us__item__img {
+  width: 355px;
+  height: 250px;
+  object-fit: cover;
+}
+.about-us__item__footer > h3 {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.about-us__item__list-icon {
+  padding: 15px 75px;
+  display: flex;
+  justify-content: space-between;
+}
+.about-us__item__icon > ion-icon {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
