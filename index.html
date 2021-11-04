@@ -10,16 +10,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;500;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <section class="menu">
+        <nav class="menu menu--transparent">
             <a href="#" class="icon"><span>.ONE</span>TOWN</a>
 
-            <ul class="menu__list">
+            <button class="menu__hambuger" id="menu__hambuger">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <ul class="menu__list" id="menu__list">
                 <li class="menu__item">
                     <a href="#" class="menu__link">About Us</a>
                 </li>
@@ -42,26 +56,46 @@
                     <a href="#" class="menu__link">Contact</a>
                 </li>
             </ul>
-        </section>
+        </nav>
 
         <section class="banner">
             <div class="banner__content">
-                <button class="btn btn--navigate">
-                    <ion-icon name="chevron-back-outline"></ion-icon>
-                </button>
-                <p class="banner__left">
-                    .Creatively <span>Professional</span>.
-                </p>
-                <div class="banner__right">
-                    <p class="banner__detail">Fully responsive website mockup PSD
-                        template. Free for commercial & presonal
-                        use. Portfolio & Contact Pages included.</p>
-                    <div class="banner__divider"></div>
-                    <button class="btn">See Works</button>
+
+
+                <div class="banner__list owl-carousel" id="banner__list">
+
+                    <div class="banner__item">
+                        <p class="banner__left">
+                            .Creatively <span>Professional</span>.
+                        </p>
+
+
+                        <div class="banner__right">
+                            <p class="banner__detail">Fully responsive website mockup PSD
+                                template. Free for commercial & presonal
+                                use. Portfolio & Contact Pages included.</p>
+                            <div class="banner__divider"></div>
+                            <button class="btn">See Works</button>
+                        </div>
+                    </div>
+                    <div class="banner__item">
+                        <p class="banner__left">
+                            Inspire <span>Emotion</span>.
+                        </p>
+
+
+                        <div class="banner__right">
+                            <p class="banner__detail">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Adipisci, impedit..</p>
+                            <div class="banner__divider"></div>
+                            <button class="btn">See Works</button>
+                        </div>
+                    </div>
+
+
                 </div>
-                <button class="btn btn--navigate">
-                    <ion-icon name="chevron-forward-outline"></ion-icon>
-                </button>
+
+
             </div>
         </section>
 
@@ -86,22 +120,30 @@
         <section class="feature-work">
             <h2 class="feature-work__header">Feature Works</h2>
             <div class="feature-work__divider divider"></div>
-            <ul class="feature-work__list">
-                <li class="feature-work__item">
-                    <div class="feature-work__item-dot feature-work__item-dot--active"></div>
-                </li>
-                <li class="feature-work__item">
+            <ul class="feature-work__list" id="feature-work__list">
+                <li class="feature-work__item" data-index="0">
                     <div class="feature-work__item-dot"></div>
                 </li>
-                <li class="feature-work__item">
+                <li class="feature-work__item" data-index="1">
                     <div class="feature-work__item-dot"></div>
                 </li>
-                <li class="feature-work__item">
+                <li class="feature-work__item" data-index="2">
+                    <div class="feature-work__item-dot"></div>
+                </li>
+                <li class="feature-work__item" data-index="3">
                     <div class="feature-work__item-dot"></div>
                 </li>
             </ul>
-            <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
-                alt="" class="feature-work__img">
+            <div class="feature-work__img-list owl-carousel" id="feature-work__img-list">
+                <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80"
+                    alt="" class="feature-work__img">
+                <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                    alt="" class="feature-work__img">
+                <img src="https://images.unsplash.com/photo-1488998527040-85054a85150e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"
+                    alt="" class="feature-work__img">
+                <img src="https://images.unsplash.com/photo-1457904375453-3e1fc2fc76f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                    alt="" class="feature-work__img">
+            </div>
             <button class="btn btn--black">See All Works</button>
         </section>
 
@@ -178,61 +220,88 @@
             <div class="divider"></div>
             <div class="about-us__list">
                 <div class="about-us__item">
-                    <img src="https://media.istockphoto.com/photos/learn-to-love-yourself-first-picture-id1291208214?b=1&k=20&m=1291208214&s=170667a&w=0&h=sAq9SonSuefj3d4WKy4KzJvUiLERXge9VgZO-oqKUOo=" alt="" class="about-us__item__img">
+                    <img src="https://media.istockphoto.com/photos/learn-to-love-yourself-first-picture-id1291208214?b=1&k=20&m=1291208214&s=170667a&w=0&h=sAq9SonSuefj3d4WKy4KzJvUiLERXge9VgZO-oqKUOo="
+                        alt="" class="about-us__item__img">
                     <div class="about-us__item__footer">
                         <h3>Joann Henry Doe</h3>
                         <ul class="about-us__item__list-icon">
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-youtube"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-skype"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-us__item">
-                    <img src="https://media.istockphoto.com/photos/excited-black-african-american-man-having-a-video-call-on-smartphone-picture-id1311088144?b=1&k=20&m=1311088144&s=170667a&w=0&h=mKa9ih4ts9WfGAEpXVQMl7mI4V-NcbWeBg3LtPxs1nU=" alt="" class="about-us__item__img">
+                    <img src="https://media.istockphoto.com/photos/excited-black-african-american-man-having-a-video-call-on-smartphone-picture-id1311088144?b=1&k=20&m=1311088144&s=170667a&w=0&h=mKa9ih4ts9WfGAEpXVQMl7mI4V-NcbWeBg3LtPxs1nU="
+                        alt="" class="about-us__item__img">
                     <div class="about-us__item__footer">
                         <h3>Christopher London</h3>
                         <ul class="about-us__item__list-icon">
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-youtube"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-skype"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="about-us__item">
-                    <img src="https://media.istockphoto.com/photos/funny-west-highland-white-terrier-dog-decorated-with-photo-props-sits-picture-id1292884801?b=1&k=20&m=1292884801&s=170667a&w=0&h=L5QgEFpFN1be2Qx8Q9PUWolafU_ecaqYiNwga6eoqxs=" alt="" class="about-us__item__img">
+                    <img src="https://media.istockphoto.com/photos/funny-west-highland-white-terrier-dog-decorated-with-photo-props-sits-picture-id1292884801?b=1&k=20&m=1292884801&s=170667a&w=0&h=L5QgEFpFN1be2Qx8Q9PUWolafU_ecaqYiNwga6eoqxs="
+                        alt="" class="about-us__item__img">
                     <div class="about-us__item__footer">
                         <h3>Love Puppy</h3>
                         <ul class="about-us__item__list-icon">
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-youtube"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-skype"></ion-icon>
+                                </a>
                             </li>
-                            <li class="about-us__item__icon">
-                                <ion-icon name="logo-facebook"></ion-icon>
+                            <li>
+                                <a class="about-us__item__icon" href="#">
+                                    <ion-icon name="logo-google"></ion-icon>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -240,14 +309,84 @@
             </div>
         </section>
 
+        <section class="testimonial">
+            <h1 class="testimonial__header">Testimonials</h1>
+            <div class="divider"></div>
+            <p class="testimonial__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed
+                leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor
+                semper. Sed lobortis magna in faucibus commodo. Ut purus odio, gravida sit amet laoreet at, dictum et
+                urna. Sed egestas mauris tellus, vitae facilisis nisi pretium imperdiet. Donec dapibus mi a mauris
+                rhoncus, a vehicula nibh porttitor. </p>
+            <p class="testimonial__bold-text">John Henry Doe, ABC Company, St. Louis</p>
+        </section>
+
+        <section class="subcribe">
+            <h1 class="subcribe__header">subscribe to our newsletter</h1>
+            <div class="divider"></div>
+            <form class="subcribe__form" action="#" method="post">
+                <input class="subcribe__input" type="email" placeholder="Enter Your Email Address">
+                <button class="subcribe__submit" type="submit">Submit</button>
+            </form>
+            <a href="#" class="icon"><span>.ONE</span>TOWN</a>
+            <ul class="subcribe__list">
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon subcribe__social-icon--rounded" href="#">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__link">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Work</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Services</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contact</a>
+                </li>
+            </ul>
+            <p class="footer__email">Email: info@domain.com</p>
+            <p class="footer__phone">St. Louis: (123) 456 7890</p>
+        </footer>
+
     </div>
-
-
-
-
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
