@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;500;600;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <nav class="menu">
+            <a href="#" class="icon"><span>.ONE</span>TOWN</a>
+
+            <button class="menu__hambuger" id="menu__hambuger">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <ul class="menu__list" id="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Work</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Services</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="container">
+            <h1 class="header">Contact Us</h1>
+            <div class="divider"></div>
+            <div class="grid">
+                <form action="#" class="grid__form">
+                    <h3 class="form__header">Your Detail</h3>
+                    <input class="form__input form__name" type="text" placeholder="Name">
+                    <input class="form__input form__email" type="email" placeholder="Email Address (Highlighted Field)">
+                    <input class="form__input form__company" type="text" placeholder="Company Name">
+                    <section class="project">
+                        <div class="project__header">
+                            <div class="project__header__chip">Close project estimte option to just say hello</div>
+                            <button class="project__header__btn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </button>
+                        </div>
+
+                        <ul class="project__slider-list">
+                            <li class="project__slider">
+                                <div class="project__slider__header">
+                                    <h3>Project Estimate</h3>
+                                    <span>$1,000 - $42,000</span>
+                                </div>
+                                <input type="range" min="1000" max="42000" value="21500" class="project__slider__input">
+                            </li>
+
+                            <li class="project__slider">
+                                <div class="project__slider__header">
+                                    <h3>Time Frame</h3>
+                                    <span>4 weeks - 10 weeks</span>
+                                </div>
+                                <input type="range" min="4" max="10" value="7" class="project__slider__input">
+                            </li>
+                        </ul>
+
+                        <ul class="project__area-list">
+                            <li class="project__area">
+                                <input type="checkbox" class="project__area__input project__area__input--check-mark"
+                                    name="mobile" value="mobile app">
+
+                                <label for="mobile" class="project__area__label">Mobile Apps</label>
+                            </li>
+                            <li class="project__area">
+                                <input type="checkbox"
+                                    class="project__area__input project__area__input--delete-mark project__area__input--red"
+                                    name="webdesign" value="webdesign">
+
+                                <label for="webdesign" class="project__area__label">Web Design & Content</label>
+                            </li>
+                            <li class="project__area">
+                                <input type="checkbox"
+                                    class="project__area__input project__area__input--check-mark project__area__input--green"
+                                    name="identity" value="identity">
+
+                                <label for="identity" class="project__area__label">Identity Creation</label>
+                            </li>
+                            <li class="project__area">
+                                <input type="checkbox"
+                                    class="project__area__input project__area__input--delete-mark project__area__input--purple"
+                                    name="brand" value="brand">
+
+                                <label for="brand" class="project__area__label">Brand promotion</label>
+                            </li>
+                            <li class="project__area">
+                                <input type="checkbox"
+                                    class="project__area__input project__area__input--delete-mark project__area__input--orange"
+                                    name="graphic" value="graphic">
+
+                                <label for="graphic" class="project__area__label">Graphic Design</label>
+                            </li>
+                            <li class="project__area">
+                                <input type="checkbox"
+                                    class="project__area__input project__area__input--delete-mark project__area__input--blue"
+                                    name="motion" value="motion">
+
+                                <label for="motion" class="project__area__label">Motion dynamics</label>
+                            </li>
+                        </ul>
+
+                        <textarea placeholder="Project Description" class="project__description"
+                            name="project_description" cols="30"></textarea>
+
+                        <button class="project__submit-btn btn btn--black">Submit Detail</button>
+                    </section>
+                </form>
+                <section class="grid__contact">
+                    <h3 class="contact__header">CONTACT INFO</h3>
+                    <p class="contact__company">.OneTown Inc</p>
+                    <div class="contact__address">
+                        <p>Street 1234, ST B</p>
+                        <p>Country Name</p>
+                        <p>Pin - 123456</p>
+                    </div>
+                    <div class="contact__calling">
+                        <p>
+                            Tel: (123) 456 7890
+                        </p>
+                        <p>Email: info@domain.com</p>
+                    </div>
+                    <ul class="contact__icon-list">
+                        <li class="contact__icon"><a href="#" class="contact__icon__link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a></li>
+                        <li class="contact__icon"><a href="#" class="contact__icon__link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a></li>
+                        <li class="contact__icon"><a href="#" class="contact__icon__link contact__icon__link--main">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a></li>
+                        <li class="contact__icon"><a href="#" class="contact__icon__link">
+                                <ion-icon name="logo-linkedin"></ion-icon>
+                            </a></li>
+                        <li class="contact__icon"><a href="#" class="contact__icon__link">
+                                <ion-icon name="logo-skype"></ion-icon>
+                            </a></li>
+                    </ul>
+                    <img src="https://images.unsplash.com/photo-1593643946890-b5b85ade6451?ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1378&q=80"
+                        alt="" class="contact__img">
+                </section>
+            </div>
+        </div>
+
+        <section class="map">
+            <div class="google-map">
+                <iframe width="100%" src="https://www.google.com/maps/d/embed?mid=1Q2CLVSnZSxZZQsrmZACa0yKf8MY"
+                    height="500"></iframe>
+            </div>
+        </section>
+
+        <section class="subcribe">
+            <h1 class="subcribe__header">subscribe to our newsletter</h1>
+            <div class="divider"></div>
+            <form class="subcribe__form" action="#" method="post">
+                <input class="subcribe__input" type="email" placeholder="Enter Your Email Address">
+                <button class="subcribe__submit" type="submit">Submit</button>
+            </form>
+            <a href="#" class="icon"><span>.ONE</span>TOWN</a>
+            <ul class="subcribe__list">
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon subcribe__social-icon--rounded" href="#">
+                        <ion-icon name="logo-pinterest"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a></li>
+                <li><a class="subcribe__social-icon" href="#">
+                        <ion-icon name="logo-skype"></ion-icon>
+                    </a></li>
+            </ul>
+        </section>
+
+        <footer class="footer">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">About Us</a>
+                </li>
+                <li class="menu__item">
+                    <span class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Work</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Services</a>
+                </li>
+                <li class="menu__item">
+                    <span href="#" class="menu__link menu__link--divider">/</span>
+                </li>
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Contact</a>
+                </li>
+            </ul>
+            <p class="footer__email">Email: info@domain.com</p>
+            <p class="footer__phone">St. Louis: (123) 456 7890</p>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="js/contact.js"></script>
+</body>
+
+</html>
