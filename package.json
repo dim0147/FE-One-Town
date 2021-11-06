@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "sass sass/index.scss css/index.css --watch",
-    "start:contact": "sass sass/contact.scss css/contact.css --watch"
+    "start:contact": "sass sass/contact.scss css/contact.css --watch",
+    "start:works": "sass sass/works.scss css/works.css --watch"
   }
 }

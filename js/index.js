@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         ],
     });
     const owl = $('#feature-work__img-list').owlCarousel({
+        autoplay: true,
         loop: true,
         items: 1,
         dots: true,

@@ -1,0 +1,205 @@
+@use '_style';
+
+.container {
+    padding: 120px 320px 0 300px;
+}
+
+.header {
+    &__text {
+        font-size: 2em;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.categories {
+    margin-top: 85px;
+    &__btn-list {
+        margin-bottom: 70px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: stretch;
+    }
+    &__btn {
+        min-width: 185px;
+        padding: 15px 0;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: white;
+        transition: opacity 0.5s ease-in-out;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__btn--black-text {
+        color: #000000;
+    }
+    &__btn--white {
+        background-color: #eaeaea;
+    }
+    &__btn--green {
+        background-color: #00c59e;
+    }
+    &__btn--red {
+        background-color: #df4343;
+    }
+    &__btn--green-deep {
+        background-color: #64b341;
+    }
+    &__btn--purple {
+        background-color: #874ab6;
+    }
+    &__btn--orange {
+        background-color: #ffa200;
+    }
+    &__btn--blue {
+        background-color: #2f84e5;
+    }
+
+    &__list {
+        margin-bottom: 150px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+        gap: 40px 20px;
+    }
+    &__item {
+        &__img {
+            overflow: hidden;
+            & img {
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+                cursor: pointer;
+                transition: all 0.5s ease;
+                &:hover {
+                    transform: scale(1.2);
+                    opacity: 0.5;
+                }
+            }
+        }
+
+        & h3 {
+            margin-top: 40px;
+            font-size: 1.5em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            text-align: center;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.work-with-us {
+    padding: 40px 0;
+    text-align: center;
+    color: white;
+    background-color: #00c59e;
+    font-size: 2em;
+}
+
+.popup {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10px;
+    background-color: rgb(0, 0, 0, 0.5);
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    &__content {
+        width: 62%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    &__btn {
+        display: block;
+        margin-left: auto;
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-size: 60px;
+        margin-bottom: 45px;
+    }
+    &__img {
+        margin-right: 75px;
+        & img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+// Ipad pro
+@media only screen and (max-width: 1279px) {
+    .popup {
+        &__content {
+            width: 80%;
+            margin-top: 50px;
+        }
+        &__btn {
+            font-size: 60px;
+            margin-bottom: 0;
+        }
+        &__img {
+            margin-right: 0;
+            & img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+// Ipad
+@media only screen and (max-width: 1023px) {
+    .container {
+        padding: 50px 50px 0 50px;
+    }
+}
+
+// Phone
+@media only screen and (max-width: 766px) {
+    .categories {
+        &__btn-list {
+            margin-bottom: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__list {
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 40px 20px;
+        }
+    }
+
+    .popup {
+        &__content {
+            width: 80%;
+            margin-top: 50px;
+        }
+        &__btn {
+            font-size: 60px;
+            padding: 0;
+            margin-bottom: 0px;
+        }
+        &__img {
+            margin-right: 0;
+            & img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
